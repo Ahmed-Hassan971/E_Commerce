@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1000px;
+  height: 600px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #ef4d4d;
+  margin: 20px auto;
+}
+.calculater {
+  width: 320px;
+  height: 520px;
+  margin: 0 auto;
+  background-color: #eaedef;
+  top: 40px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 10px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.result {
+  height: 120px;
+}
+.keyboard {
+  height: 400px;
+}
+div#history {
+  margin-bottom: 5px;
+  color: #919191;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: right;
+  padding-top: 10px;
+  margin: 0 20px;
+  height: 20px;
+}
+div#output {
+  height: 60px;
+  text-align: right;
+  margin: 10px 20px;
+  padding-top: 15px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border: none;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 15px;
+}
+.operator {
+  background-color: #ccc;
+}
+.operator,
+.number {
+  cursor: pointer;
+}
+.operator:active,
+.number:active {
+  font-size: 13px;
+}
+.number,
+.empty {
+  background-color: #eaedef;
+}
+.operator:nth-child(4) {
+  background-color: #009688;
+}
+.operator:nth-child(8) {
+  background-color: #f44336;
+}
+.operator:nth-child(12) {
+  background-color: #9c27b0;
+}
+.operator:nth-child(16) {
+  background-color: #3f51b5;
+}
+.operator:nth-child(20) {
+  background-color: #2196f3;
+}
